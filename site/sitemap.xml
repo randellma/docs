@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://mattrandell.com/docs/</loc>
+         <lastmod>2024-03-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://mattrandell.com/docs/Wayfair%20Discount/decisions/ADR001%20-%20Local%20Web%20App%20copy/</loc>
+         <lastmod>2024-03-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://mattrandell.com/docs/Wayfair%20Discount/decisions/ADR002%20-%20Message%20Broker%20Driven/</loc>
+         <lastmod>2024-03-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
