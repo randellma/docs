@@ -527,14 +527,16 @@
 <p>In Progress</p>
 <h2 id="context">Context</h2>
 <p>Presently, discount.mattrandell.com is a NextJ.js web application running on an old Macbook Air in my basement that uses a Puppeteer browser automation script to perform the web scraping to fetch discount information on a friend/family’s behalf. </p>
-<p>Some drawbacks of this approach:
-* No static IP at home so I’ve needed to fix that on occasion.
-* There are inherent security risks of having a web server on my home network.
-* It is not TLS encrypted. (mainly out of laziness and intention to migrate to Vercel where it comes for free)
-* The macbook air is slow for hosting a Next.js app.
-* Currently manually deploying when there are changes.
-* Multiple simultaneous discount requests are still synchronous, the request waits for the script to be free.
-* Discount data is locally stored on this Macbook so if it dies then so does everyone’s history.</p>
+<p>Some drawbacks of this approach:</p>
+<ul>
+<li>No static IP at home so I’ve needed to fix that on occasion.</li>
+<li>There are inherent security risks of having a web server on my home network.</li>
+<li>It is not TLS encrypted. (mainly out of laziness and intention to migrate to Vercel where it comes for free)</li>
+<li>The macbook air is slow for hosting a Next.js app.</li>
+<li>Currently manually deploying when there are changes.</li>
+<li>Multiple simultaneous discount requests are still synchronous, the request waits for the script to be free.</li>
+<li>Discount data is locally stored on this Macbook so if it dies then so does everyone’s history.</li>
+</ul>
 <p>Note: The puppeteer script cannot easily be moved out of the basement without security risk, and increased likelihood of bot detection circumventing the entire strategy.</p>
 <h2 id="decision">Decision</h2>
 <p>The lookup process should be managed by a message broker. Discount requests should be placed on a queue/topic and complete immediately if enqueuing is successful. An asynchronous service (written in Go just because I want to) will then ingest the requests, perform the web scraping lookup, and reply with the result to be delivered to the user.</p>
