@@ -278,6 +278,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    ADR02 Message Broker Driven Discount
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -287,6 +298,100 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#status" class="md-nav__link">
+    <span class="md-ellipsis">
+      Status
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#context" class="md-nav__link">
+    <span class="md-ellipsis">
+      Context
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decision" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Decision">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#to-do" class="md-nav__link">
+    <span class="md-ellipsis">
+      To do
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consequences" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consequences
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Consequences">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benefits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawbacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Drawbacks
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -320,6 +425,89 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#status" class="md-nav__link">
+    <span class="md-ellipsis">
+      Status
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#context" class="md-nav__link">
+    <span class="md-ellipsis">
+      Context
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decision" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Decision">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#to-do" class="md-nav__link">
+    <span class="md-ellipsis">
+      To do
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#consequences" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consequences
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Consequences">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#benefits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Benefits
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drawbacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Drawbacks
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -334,8 +522,50 @@
 
 
 <h1 id="adr02-message-broker-driven-discount">ADR02 Message Broker Driven Discount</h1>
-<p><a href="https://docs.google.com/document/d/1YG5pxr5zR7FPfy4UjGI-dwuwDp740hVHSJ1Xv_g3MWU">Design Document</a></p>
-<iframe src="https://docs.google.com/document/d/e/2PACX-1vQpKAOSB0Vwlt_wf_JDWNumjcEbc6w8LipMl3TV7Qn7Ntp5ro7jlhBnrS3wQAh_ETILzthnS0LjrkO3/pub?embedded=true" style="overflow:hidden;height:800;width:100%" height="800" width="100%"></iframe>
+<p>Mainly an excuse to play around with Golang, but also, finally migrate the Next.js web app to be freely hosted in Vercel by properly queuing, and asynchronously performing discount checker requests thereby unlocking some asynchronous discount check delivery methods to explore (SMS, whatsApp, email, etc).</p>
+<h2 id="status">Status</h2>
+<p>In Progress</p>
+<h2 id="context">Context</h2>
+<p>Presently, discount.mattrandell.com is a NextJ.js web application running on an old Macbook Air in my basement that uses a Puppeteer browser automation script to perform the web scraping to fetch discount information on a friend/family’s behalf. </p>
+<p>Some drawbacks of this approach:
+* No static IP at home so I’ve needed to fix that on occasion.
+* There are inherent security risks of having a web server on my home network.
+* It is not TLS encrypted. (mainly out of laziness and intention to migrate to Vercel where it comes for free)
+* The macbook air is slow for hosting a Next.js app.
+* Currently manually deploying when there are changes.
+* Multiple simultaneous discount requests are still synchronous, the request waits for the script to be free.
+* Discount data is locally stored on this Macbook so if it dies then so does everyone’s history.</p>
+<p>Note: The puppeteer script cannot easily be moved out of the basement without security risk, and increased likelihood of bot detection circumventing the entire strategy.</p>
+<h2 id="decision">Decision</h2>
+<p>The lookup process should be managed by a message broker. Discount requests should be placed on a queue/topic and complete immediately if enqueuing is successful. An asynchronous service (written in Go just because I want to) will then ingest the requests, perform the web scraping lookup, and reply with the result to be delivered to the user.</p>
+<h3 id="to-do">To do</h3>
+<ul>
+<li>Find a free-tiered message broker solution. (Vercel? Firebase? GCP?)</li>
+<li>Create a Go service to:<ul>
+<li>Await for discount requests</li>
+<li>Trigger the puppeteer script</li>
+<li>Send the results via message queue</li>
+</ul>
+</li>
+<li>Determine how the Next.js app will receive the results and deliver them to the user.<ul>
+<li>Maybe polling to start?</li>
+<li>Web socket?</li>
+</ul>
+</li>
+<li>Migrate web app to vercel.</li>
+</ul>
+<h2 id="consequences">Consequences</h2>
+<h3 id="benefits">Benefits</h3>
+<ul>
+<li>Web app is TLS authenticated, and automatically deployed to Vercel when there are changes.</li>
+<li>Eliminates non-static IP difficulties - ingress traffic no longer needs to be allowed since it will be reaching out to the message broker instead.</li>
+</ul>
+<h3 id="drawbacks">Drawbacks</h3>
+<ul>
+<li>Increase complexity with message broker  and additional service needed.</li>
+<li>New language in the tech stack (but that’s kinda the point).</li>
+<li>The Go service and Puppeteer script still needs to be hosted in the basement.</li>
+</ul>
 
 
 
