@@ -1,14 +1,68 @@
-<mxfile host="app.diagrams.net" modified="2024-03-10T19:31:35.817Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="eGErC4Q_Qy2zDdtJ3APb" version="24.0.4" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-10T19:56:32.833Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="4BXaRjDU1ts8y61SqNJW" version="24.0.4" type="github">
   <diagram name="Page-1" id="sD5DYnBOD3UTOwqR2s8F">
-    <mxGraphModel dx="954" dy="615" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="909" dy="586" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="hRgvW1VdnbkD_4P9PYJD-1" value="Discount UI&lt;div&gt;(Next.js App)&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
-          <mxGeometry x="380" y="280" width="80" height="80" as="geometry" />
+        <mxCell id="hRgvW1VdnbkD_4P9PYJD-17" value="HomeServer (Macbook Air)" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.rect;fillColor2=none;strokeWidth=1;size=20;indent=5;fillColor=none;horizontal=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="140" width="400" height="320" as="geometry" />
         </mxCell>
-        <mxCell id="hRgvW1VdnbkD_4P9PYJD-2" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="120" y="280" width="30" height="60" as="geometry" />
+        <mxCell id="hRgvW1VdnbkD_4P9PYJD-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hRgvW1VdnbkD_4P9PYJD-2" target="hRgvW1VdnbkD_4P9PYJD-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hRgvW1VdnbkD_4P9PYJD-13" value="Request" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="hRgvW1VdnbkD_4P9PYJD-10">
+          <mxGeometry x="-0.2559" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hRgvW1VdnbkD_4P9PYJD-2" value="Friend/Family" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="100" y="310" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hRgvW1VdnbkD_4P9PYJD-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="hRgvW1VdnbkD_4P9PYJD-9" target="hRgvW1VdnbkD_4P9PYJD-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hRgvW1VdnbkD_4P9PYJD-29" value="Request" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="hRgvW1VdnbkD_4P9PYJD-12">
+          <mxGeometry x="0.0667" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hRgvW1VdnbkD_4P9PYJD-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="hRgvW1VdnbkD_4P9PYJD-9" target="hRgvW1VdnbkD_4P9PYJD-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hRgvW1VdnbkD_4P9PYJD-23" value="Read Results" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="hRgvW1VdnbkD_4P9PYJD-20">
+          <mxGeometry x="-0.0934" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hRgvW1VdnbkD_4P9PYJD-9" value="Discount UI / API&lt;div&gt;(Next.js App)&lt;/div&gt;" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="395" y="310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hRgvW1VdnbkD_4P9PYJD-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="hRgvW1VdnbkD_4P9PYJD-11" target="hRgvW1VdnbkD_4P9PYJD-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hRgvW1VdnbkD_4P9PYJD-22" value="Write Results" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="hRgvW1VdnbkD_4P9PYJD-21">
+          <mxGeometry x="-0.2408" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hRgvW1VdnbkD_4P9PYJD-11" value="Puppeteer Script&lt;br&gt;(Node.js script)" style="whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="395" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hRgvW1VdnbkD_4P9PYJD-18" value="File Storage&lt;br&gt;(json)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hRgvW1VdnbkD_4P9PYJD-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="hRgvW1VdnbkD_4P9PYJD-9" target="hRgvW1VdnbkD_4P9PYJD-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="425" y="420" />
+              <mxPoint x="485" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hRgvW1VdnbkD_4P9PYJD-28" value="Wait for script&lt;div&gt;to be available&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="hRgvW1VdnbkD_4P9PYJD-27">
+          <mxGeometry x="-0.2405" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
