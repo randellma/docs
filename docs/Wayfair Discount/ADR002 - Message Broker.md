@@ -8,6 +8,7 @@ In Progress
 Presently, discount.mattrandell.com is a NextJ.js web application running on an old Macbook Air in my basement that uses a Puppeteer browser automation script to perform the web scraping to fetch discount information on a friend/family’s behalf. 
 
 Some drawbacks of this approach:
+
 * No static IP at home so I’ve needed to fix that on occasion.
 * There are inherent security risks of having a web server on my home network.
 * It is not TLS encrypted. (mainly out of laziness and intention to migrate to Vercel where it comes for free)
